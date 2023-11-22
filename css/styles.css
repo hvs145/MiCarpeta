@@ -141,6 +141,13 @@ h1,h2,h3 {
     background-color: var(--primario);
     color: var(--oscuro);
 }
+.navegacion-iconos {
+    padding: 1rem;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+}
 
 /* Imagen hero */
 .imagen {
@@ -212,7 +219,18 @@ h1,h2,h3 {
     justify-content: space-evenly;      /*Alineación para row (horizontal)*/
     align-items: center;                /*Alineación para columna (vertical)*/
 }
-
+.iconoNegro{
+    color: var(--oscuro);
+}
+.iconoVerde{
+    color: green;
+}
+.iconoRojo{
+    color: orangered;
+}
+.iconoAzul{
+    color: blue;
+}
 /*  Contactanos */
 .formulario{
     background-color: var(--gris);
