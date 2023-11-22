@@ -14,6 +14,18 @@
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
 
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
+    <link href="css/styles.css?v1.3" rel="stylesheet" />
+
+
     <title>Hugo Valle</title>
     <!--    <style>
         h1 {
@@ -33,15 +45,15 @@
         <nav class="contenedor navegacion-principal">
             <a href="#">Inicio</a>
             <a href="#">Sobre mí</a>
-            <a href="#">Clientes</a>
-            <a href="#">Contacto</a>
+            <!-- <a href="#">Clientes</a> -->
+            <a href="#contacto">Contacto</a>
         </nav>
     </div>
     <!--.nav-bg-->
 
     <section class="imagen">
         <div class="contenido-imagen">
-            <h2>Diseño y Desarrollo Web FreeLancer</h2>
+            <h2>Diseño y Desarrollo Web</h2>
             <!--<img src="/img/hero.jpg">-->
             <!--tablericons.com -->
             <div class="ubicacion">
@@ -54,7 +66,7 @@
                 </svg>
                 <p> Monterrey, Nuevo León</p>
             </div>
-            <a class="boton" href="#">Contactar</a>
+            <a class="boton" href="#contacto">Contactar</a>
         </div> <!-- .contenido-imagen -->
     </section> <!-- .imagen -->
 
@@ -127,15 +139,15 @@
             </section>
         </div> <!-- .servicios -->
 
-        <section>
+        <section id="contacto">
             <h2>Contacto</h2>
-            <form class="formulario">
+            <form class="formulario" action="#" method="POST">
                 <fieldset>
                     <legend>Contáctame llenando todos los campos</legend>
                     <div class="contenedor-campos">
                         <div class="campo">
                             <label>Nombre</label>
-                            <input class="input-text" type="text" placeholder="Tú Nombre">
+                            <input class="input-text" type="text" placeholder="Tú Nombre" required>
                         </div>
 
                         <div class="campo">
@@ -159,8 +171,30 @@
                         <!--<button type="submit">Enviar</button>   -->
                         <input class="boton w-sm-100" type="submit" value="Enviar">
                     </div>
+                    <div class="container px-12 px-lg-12">
+                        <div class="row gx-4 gx-lg-12 justify-content-center">
+                            <div class="col-lg-6 text-center mb-6 mb-lg-0">
+                                <a class="btn-xl" href="tel:8110613043" target="_blank"><i
+                                        class="bi-phone fs-2 mb-3 text-azulClaro"></i></a>
+                                <a class="btn-xl" href="https://api.whatsapp.com/send?phone=528110613043"
+                                    target="_blank"><i class="bi bi-whatsapp fs-2 mb-3 text-azulClaro"></i></a>
+                                <a class="btn-xl"
+                                    href="https://www.google.com/maps/dir/?api=1&destination=25.737436504027%2C-100.26672363281&fbclid=IwAR3OMgfJ3qyoPfga_j6J5vELQVQUNZMWGRIp3sBWXRNZ2aJgYlfRHyT-9jk"
+                                    target="_blank"><i class="bi bi-geo-alt fs-2 mb-3 text-azulClaro"></i></a>
+                                <a class="btn-xl" href="https://www.facebook.com/huguillo87" target="_blank"><i
+                                        class="bi bi-facebook fs-2 mb-3 text-azulClaro"></i></a>
+                                <a class="btn-xl" href="https://www.instagram.com/hvs145/?utm_source=qr"
+                                    target="_blank"><i class="bi bi-instagram fs-2 mb-3 text-azulClaro"></i></a>
+                                <a class="btn-xl" href="https://www.linkedin.com/in/hugovallesosa"
+                                    target="_blank"><i class="bi bi-linkedin fs-2 mb-3 text-azulClaro"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </fieldset>
             </form>
+
+
+
             <!--.formulario-->
         </section>
     </main> <!-- .contenedor .sombra -->
